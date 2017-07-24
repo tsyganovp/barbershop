@@ -1,0 +1,87 @@
+.feedback
+{
+    width: 100%;
+    border-top: 1px solid #e5ddd5;
+    background: #f8f5f2;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 52px;
+    position: relative;
+    
+    .feedback-slider
+    {
+        .feedback__header
+        {
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 37px;
+            color: black;
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 30px;
+            text-transform: uppercase;
+        }
+        .feedback-slide
+        {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            
+            .feedback-slide__author
+            {
+                padding-right: 20px;
+            }
+            .feedback-slide__about
+            {
+                .feedback-slide__header
+                {
+                    margin-bottom: 16px;
+                    color: black;
+                    font-size: 24px;
+                    font-weight: 700;
+                    line-height: 27px;
+                }
+                .feedback-slide__text
+                {
+                    margin-bottom: 30px;
+                    text-align: justify;
+                    color: black;
+                    font-size: 18px;
+                    line-height: 27px;
+                }
+            }
+        }
+    }
+    .slider-controls
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background: #f8f5f2;
+            
+        .control
+        {
+            margin-left: 14px;
+            margin-right: 14px;
+            display: block;
+            width: 10px;
+            height: 10px;
+            //background: white;
+            border: 1px solid black;
+            transform: rotate(45deg);
+            
+            &:first-of-type
+            {
+                background: black;
+            }
+        }
+    }
+    
+    &:after
+    {
+        bottom: -4px;
+        left: 0;
+        position: absolute;
+        content: url(../img/object-2-mobile.png);
+    }
+}

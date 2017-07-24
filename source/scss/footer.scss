@@ -1,0 +1,30 @@
+.footer
+{
+    background-color: #252525;
+    padding-bottom: 30px;
+    
+    .footer__header
+    {
+        padding-top: 35px;
+        padding-bottom: 18px;
+        text-align: center;
+        color: white;
+        font-size: 18px;
+        line-height: 27px;
+    }
+    .footer__text
+    {
+        margin-left: 20px;
+        margin-right: 20px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        
+        text-align: center;
+        color: white;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 24px;
+        text-transform: uppercase;
+        border: 1px solid #3f3f3f;
+    }
+}

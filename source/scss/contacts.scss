@@ -1,0 +1,61 @@
+.contacts
+{
+    width: 100%;
+    background: #252525;
+    
+    .contacts__header
+    {
+        padding-top: 39px;
+        text-align: center;
+        color: white;
+        font-size: 18px;
+        line-height: 27px;
+        font-weight: 700;
+    }
+    .contacts__address
+    {
+        padding-top: 25px;
+        padding-bottom: 25px;
+        text-align: center;
+        color: white;
+        font-size: 18px;
+        line-height: 27px;
+    }
+    .contacts__tel
+    {
+        margin-right: 20px;
+        margin-left: 20px;
+        padding-top: 18px;
+        padding-bottom: 15px;
+        text-align: center;
+        color: white;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 27px;
+        border: 1px solid;
+    }
+    .socio
+    {
+        padding-top: 26px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        
+        .socio__image
+        {
+            width: 33.3%;
+            text-align: center;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            //padding-left: 30px;
+            //padding-right: 30px;
+            border: 1px solid #3f3f3f;
+            
+            img
+            {
+                height: 40px;
+            }
+        }
+    }
+}

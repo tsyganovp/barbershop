@@ -1,0 +1,29 @@
+.main-menu
+{
+    background-color: #826551;
+    position: relative;
+    .main-menu__list
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #826551;
+        
+        .main-menu__item 
+        {
+            display: flex;
+            justify-content: center;
+            padding-top: 19px;
+            padding-bottom: 18px;
+            box-shadow: 0 2px 0 #71543f, inset 0 2px 0 #886e5b;
+            .main-menu__link
+            {
+                color: #ffffff;
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 24px;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
