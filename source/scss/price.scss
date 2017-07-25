@@ -1,0 +1,89 @@
+.prices
+{
+    width: 100%;
+    background: #353535;
+    padding-bottom: 51px;
+    position: relative;
+    
+    .prices__header
+    {
+        padding-top: 35px;
+        padding-bottom: 32px;
+        text-align: center;
+        color: white;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 30px;
+        text-transform: uppercase;
+    }
+    .prices-table
+    {
+        margin-left: 20px;
+        
+        .prices-table__row
+        {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            margin-bottom: 25px;
+            
+            .todo
+            {
+                margin-right: 10px;
+                width: 200px;
+                order: 1;
+                color: white;
+                font-size: 20px;
+                line-height: 27px;
+                font-weight: 300;
+            }
+            .desc
+            {
+                order: 3;
+                color: white;
+                font-size: 15px;
+                line-height: 27px;
+            }
+            .price
+            {
+                width: 90px;
+                order: 2;
+                color: white;
+                font-size: 15px;
+                line-height: 27px;
+            }
+        }
+    }
+    .discount
+    {
+        margin-left: 20px;
+        margin-right: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        border: 1px solid #484848;
+        
+        .discount__img
+        {
+            padding-left: 10px;
+        }
+        .discount__text
+        {
+            margin-left: 31px;
+            color: white;
+            font-size: 20px;
+            line-height: 27px;
+        }
+    }
+    
+    &:after
+    {
+        bottom: -4px;
+        left: 0;
+        position: absolute;
+        content: url(../img/object-2-mobile.png);
+    }
+}
