@@ -1,111 +1,186 @@
-.contacts
+.footer
 {
     background: #252525;
     
-    .contacts__header
+    @media screen and ($tablet-widths)
     {
-        padding-top: 39px;
-        padding-bottom: 20px;
-        text-align: center;
-        font-weight: 700;
-        color: white;
-        font-size: 18px;
-        line-height: 27px;
-    }
-    .contacts__address
-    {
-        margin-bottom: 22px;
-        text-align: center;
-        color: white;
-        font-size: 18px;
-        line-height: 27px;
-    }
-    .contacts__tel
-    {
-        margin-left: 20px;
-        margin-right: 20px;
-        padding-top: 18px;
-        padding-bottom: 15px;
-        text-align: center;
-        color: white;
-        font-size: 18px;
-        font-weight: 700;
-        line-height: 27px;
-        border: 1px solid #3b3b3b;
-    }
-}
-.socio
-{
-    padding-top: 26px;
-    background: #252525;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    
-    .socio__image
-    {
-        width: 105px;
-        height: 101px;
+        width: 100%;
         display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .contacts
+    {
+        background: #252525;
+        
+        @media screen and ($tablet-widths)
+        {
+            width: 400px;
+            order: 1;
+            margin-right: 50px;
+            padding-left: 64px;
+        }
+        .contacts__header
+        {
+            padding-top: 39px;
+            padding-bottom: 20px;
+            text-align: center;
+            font-weight: 700;
+            color: white;
+            font-size: 18px;
+            line-height: 27px;
+            
+            @media screen and ($tablet-widths)
+            {
+                text-align: left;
+                text-transform: uppercase;
+            }
+            
+        }
+        .contacts__address
+        {
+            margin-bottom: 22px;
+            text-align: center;
+            color: white;
+            font-size: 18px;
+            line-height: 27px;
+            
+            @media screen and ($tablet-widths)
+            {
+                margin: 0;
+                text-align: left;
+            }
+        }
+        .contacts__tel
+        {
+            margin-left: 20px;
+            margin-right: 20px;
+            padding-top: 18px;
+            padding-bottom: 15px;
+            text-align: center;
+            color: white;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 27px;
+            border: 1px solid #3b3b3b;
+            
+            @media screen and ($tablet-widths)
+            {
+                margin: 0;
+                padding: 0;
+                text-align: left;
+                border: 0;
+                font-weight: 400;
+            }
+        }
+    }
+    .socio
+    {
+        padding-top: 26px;
+        background: #252525;
+        display: flex;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
-        border: 1px solid #3b3b3b;
-    }
-    .socio__image--one
-    {
         
-        img
+        @media screen and ($tablet-widths)
         {
-            width: 23px;
-            height: 26px;
+            order: 3;
+            padding-top: 51px;
+            padding-bottom: 59px;
+            margin-left: 64px;
+            margin-right: 64px;
+        }
+        
+        .socio__image
+        {
+            width: 105px;
+            height: 101px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #3b3b3b;
+            
+            @media screen and ($tablet-widths)
+            {
+                width: 214px;
+                height: 101px;
+            }
+        }
+        .socio__image--one
+        {
+
+            img
+            {
+                width: 23px;
+                height: 26px;
+            }
+        }
+        .socio__image--two
+        {
+
+            img
+            {
+                width: 18px;
+                height: 39px;
+            }    
+        }
+        .socio__image--three
+        {
+
+            img
+            {
+                width: 36px;
+                height: 36px;
+            }
         }
     }
-    .socio__image--two
+    .developers
     {
+        background: #252525;
+        padding-bottom: 40px;
         
-        img
+        @media screen and ($tablet-widths)
         {
-            width: 18px;
-            height: 39px;
-        }    
-    }
-    .socio__image--three
-    {
-        
-        img
-        {
-            width: 36px;
-            height: 36px;
+            //width: 160px;
+            padding-bottom: 0;
+            order: 2;
         }
-    }
-}
-.developers
-{
-    background: #252525;
-    padding-bottom: 40px;
-    
-    .footer__header
-    {
-        padding-top: 35px;
-        padding-bottom: 33px;
-        text-align: center;
-        color: white;
-        font-size: 18px;
-        line-height: 27px;
-    }
-    .footer__text
-    {
-        margin-left: 20px;
-        margin-right: 20px;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        color: white;
-        text-align: center;
-        font-size: 18px;
-        font-weight: 700;
-        line-height: 24px;
-        text-transform: uppercase;
-        border: 1px solid #3b3b3b;
+
+        .footer__header
+        {
+            padding-top: 35px;
+            padding-bottom: 33px;
+            text-align: center;
+            color: white;
+            font-size: 18px;
+            line-height: 27px;
+            
+            @media screen and ($tablet-widths)
+            {
+                padding-bottom: 15px;
+            }
+        }
+        .footer__text
+        {
+            margin-left: 20px;
+            margin-right: 20px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            color: white;
+            text-align: center;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 24px;
+            text-transform: uppercase;
+            border: 1px solid #3b3b3b;
+            
+            @media screen and ($tablet-widths)
+            {
+                padding-left: 29px;
+                padding-right: 25px;
+            }
+        }
     }
 }
