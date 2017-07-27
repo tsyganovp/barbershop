@@ -2,12 +2,32 @@
 {
     background-color: #826551;
     position: relative;
+    
+    @media screen and ($tablet-widths)
+    {
+        order: 1;
+        background-color: black;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        
+        @media screen and ($tablet-widths)
+        {
+            justify-content: center;
+        }
+    }
     .main-menu__list
     {
         display: flex;
         flex-direction: column;
         justify-content: center;
         background-color: #826551;
+        
+        @media screen and ($tablet-widths)
+        {
+            flex-direction: row; 
+            background-color: black;
+        }
         
         .main-menu__item 
         {
@@ -16,6 +36,20 @@
             padding-top: 19px;
             padding-bottom: 18px;
             box-shadow: 0 2px 0 #71543f, inset 0 2px 0 #886e5b;
+            
+            @media screen and ($tablet-widths)
+            {
+                box-shadow: none;
+                margin-left: 16px;
+                margin-right: 16px;
+                border-bottom: 3px solid black;
+                
+                &:hover
+                {
+                    cursor: pointer;
+                    border-bottom: 3px solid #826550;
+                }
+            }
             .main-menu__link
             {
                 color: #ffffff;

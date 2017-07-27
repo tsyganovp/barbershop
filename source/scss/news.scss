@@ -1,8 +1,16 @@
 .news
 {
-    width: 100%;
     background: #f8f5f2;
     padding-bottom: 28px;
+    
+    @media screen and ($tablet-widths)
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        border-bottom: 1px solid #e5ddd5;
+    }
     
     .news__header
     {
@@ -14,6 +22,14 @@
         font-weight: 700;
         line-height: 30px;
         text-transform: uppercase;
+        
+        @media screen and ($tablet-widths)
+        {
+            padding-top: 51px;
+            order: 1;
+            width: 44%;
+            margin-right: 155px;
+        }
     }
     .news__block
     {
@@ -24,6 +40,13 @@
         padding-bottom: 21px;
         padding-top: 23px;
         border-bottom: 1px solid #e5ddd5;
+        
+        @media screen and ($tablet-widths)
+        {
+            width: 40%;
+            margin-left: 40px;
+            border: 0;
+        }
         
         
         .news__date
@@ -67,8 +90,20 @@
             line-height: 27px;
         }
     }
+    .news__block--one
+    {
+        @media screen and ($tablet-widths)
+        {
+            order: 3;
+        }
+    }
     .news__block--two
     {
         border: 0;
+        
+        @media screen and ($tablet-widths)
+        {
+            order: 4;
+        }
     }
 }

@@ -3,11 +3,19 @@ block feedback
         .feedback-slider
             h2.feedback__header Отзывы о нас
             .feedback-slide
-                .feedback-slide__author
-                    img(src="img/feedback-photo.jpg")
-                .feedback-slide__about
-                    h2.feedback-slide__header Трэвис Баркер
-                    p.feedback-slide__text Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!
+                .slide-left
+                    img(src="img/left-arrow.png" alt="Arrow")
+                .feedback-slide__body
+                    .feedback-slide__author
+                        picture
+                            source(media="(min-width: 1200px)" srcset="img/icons/logo-desktop.svg")
+                            source(media="(min-width: 768px)" srcset="img/feedback-photo-tablet.png")
+                            img(src="img/feedback-photo.jpg" alt="Photo")
+                    .feedback-slide__about
+                        h2.feedback-slide__header Трэвис Баркер
+                        p.feedback-slide__text Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!
+                .slide-right
+                    img(src="img/right-arrow.png" alt="Arrow")
         .slider-controls
             .control.control--one
             .control.control--two

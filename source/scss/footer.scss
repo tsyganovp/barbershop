@@ -1,12 +1,94 @@
-.footer
+.contacts
 {
-    background-color: #252525;
-    padding-bottom: 30px;
+    background: #252525;
+    
+    .contacts__header
+    {
+        padding-top: 39px;
+        padding-bottom: 20px;
+        text-align: center;
+        font-weight: 700;
+        color: white;
+        font-size: 18px;
+        line-height: 27px;
+    }
+    .contacts__address
+    {
+        margin-bottom: 22px;
+        text-align: center;
+        color: white;
+        font-size: 18px;
+        line-height: 27px;
+    }
+    .contacts__tel
+    {
+        margin-left: 20px;
+        margin-right: 20px;
+        padding-top: 18px;
+        padding-bottom: 15px;
+        text-align: center;
+        color: white;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 27px;
+        border: 1px solid #3b3b3b;
+    }
+}
+.socio
+{
+    padding-top: 26px;
+    background: #252525;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    .socio__image
+    {
+        width: 105px;
+        height: 101px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #3b3b3b;
+    }
+    .socio__image--one
+    {
+        
+        img
+        {
+            width: 23px;
+            height: 26px;
+        }
+    }
+    .socio__image--two
+    {
+        
+        img
+        {
+            width: 18px;
+            height: 39px;
+        }    
+    }
+    .socio__image--three
+    {
+        
+        img
+        {
+            width: 36px;
+            height: 36px;
+        }
+    }
+}
+.developers
+{
+    background: #252525;
+    padding-bottom: 40px;
     
     .footer__header
     {
         padding-top: 35px;
-        padding-bottom: 18px;
+        padding-bottom: 33px;
         text-align: center;
         color: white;
         font-size: 18px;
@@ -16,15 +98,14 @@
     {
         margin-left: 20px;
         margin-right: 20px;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        
-        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
         color: white;
+        text-align: center;
         font-size: 18px;
         font-weight: 700;
         line-height: 24px;
         text-transform: uppercase;
-        border: 1px solid #3f3f3f;
+        border: 1px solid #3b3b3b;
     }
 }
