@@ -19,6 +19,15 @@
     {
         margin-left: 20px;
         
+        @media screen and($tablet-widths)
+        {
+            margin-left: 64px;
+            margin-right: 64px;
+            border: 1px solid #494949;
+            border-right: 0;
+            border-bottom: 0;
+        }
+        
         .prices-table__row
         {
             display: flex;
@@ -26,31 +35,98 @@
             justify-content: flex-start;
             flex-wrap: wrap;
             margin-bottom: 25px;
+            border-bottom: 1px solid #494949;
             
+            @media screen and($tablet-widths)
+            {
+                margin: 0;
+            }
+            
+            .number
+            {
+                display: none;
+                
+                @media screen and($tablet-widths)
+                {
+                    padding-left: 32px;
+                    padding-right: 32px;
+                    padding-top: 19px;
+                    padding-bottom: 19px;
+                    border-right: 1px solid #494949;
+                    display: block;
+                    color: #707070;
+                    font-size: 20px;
+                    line-height: 27px;
+                }
+            }
             .todo
             {
                 margin-right: 10px;
+                padding-top: 19px;
+                padding-bottom: 19px;
                 width: 200px;
                 order: 1;
                 color: white;
                 font-size: 20px;
                 line-height: 27px;
                 font-weight: 300;
+                
+                @media screen and($tablet-widths)
+                {
+                    border-right: 1px solid #494949;
+                    padding-left: 20px;
+                    padding-right: 47px;
+                    font-size: 17px;
+                }
             }
             .desc
             {
+                padding-top: 19px;
+                padding-bottom: 19px;
                 order: 3;
                 color: white;
                 font-size: 15px;
                 line-height: 27px;
+                
+                span
+                {
+                    @media screen and($tablet-widths)
+                    {
+                        display: none;
+                    }
+                }
+                
+                @media screen and ($tablet-widths)
+                {
+                    padding-left: 21px;
+                    padding-right: 21px;
+                    border-right: 1px solid #494949;
+                }
+            }
+            .desc--four
+            {
+                @media screen and ($tablet-widths)
+                {
+                    padding-right: 66px;
+                }
             }
             .price
             {
+                padding-top: 19px;
+                padding-bottom: 19px;
                 width: 90px;
                 order: 2;
                 color: white;
                 font-size: 15px;
                 line-height: 27px;
+                
+                @media screen and ($tablet-widths)
+                {
+                    padding-left: 21px;
+                    padding-right: 19px;
+                    order: 4;
+                    border-right: 1px solid #494949;        
+                }
             }
         }
     }
@@ -65,9 +141,26 @@
         align-content: center;
         border: 1px solid #484848;
         
+        @media screen and ($tablet-widths)
+        {
+            margin-left: 64px;
+            margin-right: 64px;
+            margin-top: 10px;
+            margin-bottom: 56px;
+            padding-top: 45px;
+            padding-bottom: 42px;
+        }
+        
         .discount__img
         {
             padding-left: 10px;
+            
+            @media screen and ($tablet-widths)
+            {
+                padding-left: 27px;
+                padding-right: 87px;
+            }
+            
         }
         .discount__text
         {
@@ -75,6 +168,23 @@
             color: white;
             font-size: 20px;
             line-height: 27px;
+            
+            p
+            {
+                @media screen and ($tablet-widths)
+                {
+                    padding-top: 13px;
+                }
+            }
+            
+            @media screen and ($tablet-widths)
+            {
+                margin-left: 0;
+                font-size: 30px;
+                font-weight: 700;
+                line-height: 27px;
+                text-transform: uppercase;
+            }
         }
     }
     
@@ -84,5 +194,10 @@
         left: 0;
         position: absolute;
         content: url(../img/object-2-mobile.png);
+        
+        @media screen and ($tablet-widths)
+        {
+            content: "";
+        }
     }
 }

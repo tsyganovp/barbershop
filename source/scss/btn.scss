@@ -27,3 +27,28 @@
         order: 2;
     }
 }
+.work__btn
+{
+    display: none;
+    
+    @media screen and ($tablet-widths)
+    {
+        top: 63px;
+        right: 64px;
+        display: block;
+        position: absolute;
+        padding: 19px;
+        padding-left: 39px;
+        padding-right: 39px;
+        border: 1px solid #e5ded6;
+        
+        p
+        {
+            color: black;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 24px;
+            text-transform: uppercase;
+        }
+    }
+}

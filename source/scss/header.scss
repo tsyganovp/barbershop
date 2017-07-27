@@ -9,7 +9,7 @@
     {
         background-image: url(../img/back-tablet.jpg);
         //background-color: black;
-        margin-top: 29px;
+        //margin-top: 29px;
         //margin-bottom: 29px;     
     }
     .page-header__logo
@@ -22,7 +22,7 @@
         @media screen and($tablet-widths)
         {
             margin-top: 39px;
-            margin-bottom: 257px;
+            margin-bottom: 207px;
             order: 2;
             background: none;
         }
