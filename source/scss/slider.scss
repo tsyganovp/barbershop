@@ -4,6 +4,14 @@
     background-color: #242424;
     padding-bottom: 47px;
     
+    @media screen and ($desktop-widths)
+    {
+        padding-top: 160px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    
     .slide
     {
         background-color: #242424;
@@ -20,6 +28,16 @@
             margin-right: 100px;
         }
         
+        @media screen and ($desktop-widths)
+        {
+            width: 320px;
+            margin: 0;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 0;
+        }
+        
         .slide__image
         {
             display: flex;
@@ -32,6 +50,11 @@
                 margin-right: 32px;
                 width: 95px;
             }
+            
+            @media screen and ($tablet-widths)
+            {
+                margin: 0;
+            }
         }
         .slide__information
         {
@@ -39,6 +62,11 @@
             {
                 width: 445px;
                 padding-bottom: 40px;
+            }
+            
+            @media screen and ($tablet-widths)
+            {
+                width: auto;
             }
             
             .slide__header
@@ -57,6 +85,11 @@
                     text-align: left;
                     font-size: 25px;
                 }
+                
+                @media screen and ($desktop-widths)
+                {
+                    text-align: center;
+                }
             }
             .slide__text
             {
@@ -74,7 +107,19 @@
                     padding: 0;
                     font-size: 15px;
                 }
+                
+                @media screen and ($desktop-widths)
+                {
+                    text-align: center;
+                }
             }
+        }
+    }
+    .slide--one
+    {
+        @media screen and ($desktop-widths)
+        {
+            margin-left: 120px;
         }
     }
     .slide--two
@@ -85,6 +130,12 @@
         {
             display: flex;
         }
+        
+        @media screen and ($desktop-widths)
+        {
+            margin-left: 61px;
+            margin-right: 61px;
+        }
     }
     .slide--three
     {
@@ -94,6 +145,11 @@
         {
             display: flex;
             border-bottom: 0;
+        }
+        
+        @media screen and ($desktop-widths)
+        {
+            margin-right: 120px;
         }
     }
     .slider-controls
@@ -135,6 +191,11 @@
         @media screen and ($tablet-widths)
         {
             content: url(../img/object-tablet.png)
+        }
+        
+        @media screen and ($desktop-widths)
+        {
+            content: url(../img/object-desktop.png)
         }
     }
 }

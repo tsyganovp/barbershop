@@ -26,6 +26,37 @@
         width: 20%;
         order: 2;
     }
+    @media screen and ($desktop-widths)
+    {
+        margin-top: 42px;
+    }
+}
+.feedback__btn
+{
+    display: none;
+    
+    @media screen and ($desktop-widths)
+    {
+        position: absolute;
+        display: block;
+        top: 43px;
+        right: 64px;
+        margin: 0;
+        padding: 0;
+        padding-left: 39px;
+        padding-right: 39px;
+        padding-top: 14px;
+        padding-bottom: 14px;
+        //height: 50px;
+        text-align: center;
+        order: 2;
+        color: black;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 24px;
+        text-transform: uppercase;
+        border: 1px solid #e5ddd5;
+    }
 }
 .work__btn
 {

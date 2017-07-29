@@ -12,6 +12,11 @@
         //margin-top: 29px;
         //margin-bottom: 29px;     
     }
+    
+    @media screen and ($desktop-widths)
+    {
+        background-image: url(../img/back-desktop.jpg);
+    }
     .page-header__logo
     {
         display: flex;
@@ -25,6 +30,11 @@
             margin-bottom: 207px;
             order: 2;
             background: none;
+        }
+        
+        @media screen and ($desktop-widths)
+        {
+            margin-bottom: 438px;
         }
         img
         {

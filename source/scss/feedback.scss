@@ -7,6 +7,12 @@
     padding-bottom: 52px;
     position: relative;
     
+    @media screen and ($desktop-widths)
+    {
+        position: relative;
+        padding-bottom: 98px;
+    }
+    
     .feedback-slider
     {
         .feedback__header
@@ -19,6 +25,13 @@
             font-weight: 700;
             line-height: 30px;
             text-transform: uppercase;
+            
+            @media screen and ($desktop-widths)
+            {
+                margin-top: 50px;
+                margin-left: 175px;
+                text-align: left;
+            }
         }
         .feedback-slide
         {
@@ -30,6 +43,11 @@
             {
                 margin: 0 auto;
                 width: 660px;
+            }
+            
+            @media screen and ($desktop-widths)
+            {
+                width: 960px;
             }
                 
             .feedback-slide__body
@@ -47,7 +65,15 @@
                     width: 565px;
                     border-top: 1px solid #e5ddd5;
                     border-bottom: 1px solid #e5ddd5;
-                    
+                }
+                
+                @media screen and ($desktop-widths)
+                {
+                    width: 820px;
+                    margin-left: 20px;
+                    margin-right: 20px;
+                    padding-top: 0;
+                    border: 1px solid #e5ddd5;
                 }
                 
                 .feedback-slide__author
@@ -58,9 +84,28 @@
                     {
                         margin-top: 12px;
                     }
+                    
+                    @media screen and ($desktop-widths)
+                    {
+                        margin-top: 0;
+                        padding-right: 70px;
+                    }
+                    
+                    img
+                    {
+                        vertical-align: middle;
+                    }
                 }
                 .feedback-slide__about
                 {
+                    
+                    @media screen and ($desktop-widths)
+                    {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: baseline;
+                        justify-content: center;
+                    }
                     .feedback-slide__header
                     {
                         margin-bottom: 16px;
@@ -76,6 +121,11 @@
                         color: black;
                         font-size: 18px;
                         line-height: 27px;
+                        
+                        @media screen and ($desktop-widths)
+                        {
+                            margin-bottom: 0;
+                        }
                     }
                 }
             }
@@ -97,6 +147,12 @@
                 //height: 12px;
                 border: 1px solid #e5ddd5;
             }
+            
+            @media screen and ($desktop-widths)
+            {
+                padding-top: 72px;
+                padding-bottom: 72px;
+            }
         }
         .slide-right
         {
@@ -114,6 +170,12 @@
                 width: 12px;
                 //height: 12px;
                 border: 1px solid #e5ddd5;
+            }
+            
+            @media screen and ($desktop-widths)
+            {
+                padding-top: 72px;
+                padding-bottom: 72px;
             }
         }
     }
