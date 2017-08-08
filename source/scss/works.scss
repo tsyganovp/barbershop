@@ -24,6 +24,13 @@
         }
     }
     
+    @media screen and($desktop-widths)
+    {
+        &:before
+        {
+            content: url(../img/object-desktop.png);
+        }
+    }
     .works__header
     {
         padding-top: 33px;
@@ -42,6 +49,13 @@
             padding-bottom: 67px;
             text-align: left;
         }
+        @media screen and ($desktop-widths)
+        {
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 30px;
+            text-transform: uppercase;
+        }
     }
     .work-of-month
     {
@@ -59,6 +73,12 @@
             margin-right: 64px;
             border: 1px solid #e5ded6;
         }
+        
+        @media screen and ($desktop-widths)
+        {
+            margin-left: 120px;
+            margin-right: 120px;
+        }
         .works-of-month__image
         {
             img
@@ -71,6 +91,10 @@
             @media screen and ($tablet-widths)
             {
                 width: 50%;
+            }
+            @media screen and ($desktop-widths)
+            {
+                width: 47%;
             }
             .work-of-month__promo
             {
@@ -94,6 +118,12 @@
                     left: 0;
                     bottom: 380px;
                 }
+                
+                @media screen and ($desktop-widths)
+                {
+                    left: 79.1%;
+                    bottom: 385px;
+                }
 
                 &:after
                 {
@@ -103,6 +133,16 @@
                     border-right: 10px solid #f0f0f0;
                     top: 0;
                     right: 0;
+                    
+                    @media screen and ($desktop-widths)
+                    {
+                        content: "";
+                        position: absolute;
+                        border: 30px solid transparent;	border-left: 20px solid #f8f5f2;
+                        top: 0;
+                        //right: none;
+                        left: 0;
+                    }
                 }
             }
             .work-of-month__name
@@ -121,6 +161,13 @@
                     margin-left: 50px;
                     margin-bottom: 33px;   
                 }
+                @media screen and ($desktop-widths)
+                {
+                    margin-top: 130px;
+                    font-size: 24px;
+                    font-weight: 700;
+                    line-height: 27px;
+                }
             }
             .work-of-month__text
             {
@@ -136,6 +183,12 @@
                    padding: 0;
                    padding-bottom: 132px;
                    margin-left: 50px;
+                }
+                
+                @media screen and ($desktop-widths)
+                {
+                    margin-right: 139px;
+                    padding-bottom: 100px;
                 }
             }
         
@@ -185,6 +238,18 @@
             }
         }
     }
+    .work-blocks
+    {
+        @media screen and ($desktop-widths)
+        {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-start;
+            //margin-left: 120px;
+            //margin-right: 120px;
+        }
+    }
     .work
     {
         //border-bottom: 1px solid #e5ddd5;
@@ -201,6 +266,14 @@
             border: 1px solid #e5ded6;
         }
         
+        @media screen and ($desktop-widths)
+        {
+            width: 294px;
+            //height: 541px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        
         .work__image
         {
             margin-top: 20px;
@@ -210,16 +283,28 @@
             {
                 margin: 0;
             }
+            
+            @media screen and ($desktop-widths)
+            {
+                height: 294px;
+            }
+            
             img
             {
                 vertical-align: middle;
             }
         }
+    
         .work__text-block
         {
             @media screen and ($tablet-widths)
             {
                 width: 50%;
+            }
+            
+            @media screen and ($desktop-widths)
+            {
+                width: 100%;
             }
             
             .work__name
@@ -240,6 +325,11 @@
                     margin-left: 50px;
                     margin-bottom: 33px;   
                 }
+                
+                @media screen and ($desktop-widths)
+                {
+                    margin-top: 35px;
+                }
             }
             .work__text
             {
@@ -256,6 +346,12 @@
                    margin-left: 50px;
                 }
             }
+            
+            .work__text--two
+            {
+                padding-bottom: 78px;   
+            }
+            
             .what-done
             {
                 padding-top: 27px;
@@ -305,6 +401,17 @@
             left: 0;
             position: absolute;
             content: url(../img/object-3-tablet.png);
+        }
+    }
+    
+    @media screen and ($desktop-widths)
+    {
+        &:after
+        {
+            bottom: -4px;
+            left: 0;
+            position: absolute;
+            content:"";
         }
     }
 }

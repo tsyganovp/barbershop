@@ -39,6 +39,19 @@
             padding-bottom: 18px;
             box-shadow: 0 2px 0 #71543f, inset 0 2px 0 #886e5b;
             
+            &:hover
+            {
+                cursor: pointer;
+                background-color: #755a46;
+            }
+            &:active
+            {
+                .main-menu__link
+                {
+                    color: #917c6c;
+                }
+            }
+            
             @media screen and ($tablet-widths)
             {
                 box-shadow: none;
@@ -49,7 +62,21 @@
                 &:hover
                 {
                     cursor: pointer;
+                    background-color: black;
+                    .main-menu__link
+                    {
+                        color: #826551;
+                    }
+                }
+                
+                &:active
+                {
                     border-bottom: 3px solid #826550;
+                    
+                    .main-menu__link
+                    {
+                        color: white;
+                    }
                 }
             }
             

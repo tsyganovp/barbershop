@@ -1,6 +1,24 @@
 .btn
 {
     display: block;
+    
+    &:hover
+    {
+        cursor: pointer;
+        border: 1px solid #d6cabf;
+    }
+    
+    &:active
+    {
+        background-color: #d6cabf;
+        color: #958d85;
+        border: 1px solid #d6cabf;
+        
+        p
+        {
+            color: #958d85;
+        }
+    }
 }
 .news__btn
 {
@@ -81,5 +99,10 @@
             line-height: 24px;
             text-transform: uppercase;
         }
+    }
+    
+    @media screen and ($desktop-widths)
+    {
+        top: 47px;
     }
 }

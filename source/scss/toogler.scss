@@ -6,11 +6,15 @@
     right: 0;
     z-index: 2;
     display: block;
-    height: 40px;
+    //height: 40px;
     font-size: 0;
     cursor: pointer;
     border: none;
     
+    &:hover
+    {
+        background-color: #624530;
+    }
     @media screen and ($tablet-widths)
     {
         display: none;

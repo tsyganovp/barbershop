@@ -63,8 +63,8 @@
         }
         .promo__header
         {
-            padding-left: 70px;
-            padding-right: 70px;
+            //padding-left: 70px;
+            //padding-right: 70px;
             padding-bottom: 21px;
             color: black;
             font-size: 30px;
@@ -80,7 +80,7 @@
                 text-transform: inherit;
             }
             
-            @media screen and ($tablet-widths)
+            @media screen and ($desktop-widths)
             {
                 padding-bottom: 49px;
             }

@@ -4,6 +4,7 @@
     flex-direction: column;
     justify-content: flex-start;
     background-color: #826551;
+    position: relative;
     
     @media screen and ($tablet-widths)
     {
@@ -27,7 +28,7 @@
         @media screen and($tablet-widths)
         {
             margin-top: 39px;
-            margin-bottom: 207px;
+            margin-bottom: 257px;
             order: 2;
             background: none;
         }
